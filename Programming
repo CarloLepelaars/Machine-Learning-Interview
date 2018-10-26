@@ -40,3 +40,8 @@ Q31: Which data visualization libraries do you use? What are your thoughts on th
 A31: What’s important here is to define your views on how to properly visualize data 
      and your personal preferences when it comes to tools. 
      Popular tools include R’s ggplot, Python’s seaborn and matplotlib, and tools such as Plot.ly and Tableau.
+     
+Q32: In a time-series problem, how do you appropriately select a training, validation and test set?
+A32: We often want to predict the future in a time-series problem, so to test our model we need the most recent data to check
+     how accurate our model is. We will use the slightly older data for validation and oldest data for training.
+     We have to balance these sets out carefully so as to use not only outdated data for training.
